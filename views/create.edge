@@ -1,0 +1,68 @@
+@layout('layouts.app')
+
+
+@section('content')
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('/img/contact-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Yeni Gönderi</h1>
+            <span class="subheading">Have questions? I have answers.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 offset-md-2">
+           <form action="/posts/store" method="POST" enctype="multipart/form-data">
+           <div class="control-group">
+               <div class="form-group floating-label-form-group controls">
+                    <label>Baslik:</label>
+                    <input type="text" name="title" placeholder="Baslik" class="form-control">
+               </div>
+           </div>
+           <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+                 <label>Tanim:</label>
+                 <input type="text" name="subtitle" placeholder="Tanim" class="form-control">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+                 <label>Icerik:</label>
+                 <textarea id="content" name="content" placeholder="Icerik.." id="" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group mt-5">
+          <input type="file" name="image" class="form-control-file">
+        </div>
+        <div class="form-group my-4 text-center">
+            <button class="btn btn-primary">Gönderi Olustur</button>
+        </div>
+           </form>
+          </div>
+      </div>
+  </div>
+@endsection
+
+@section('styles')
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.css" rel="stylesheet">
+
+@endsection
+
+@section('scripts')
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.js"></script>
+
+<script>
+  $('#content').summernote();
+</script>
+@endsection
