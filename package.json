@@ -16,7 +16,7 @@
     "connect-flash": "^0.1.1",
     "connect-mongo": "^2.0.3",
     "dotenv": "^8.0.0",
-    "edge.js": "^1.1.4",
+    "edge.js": "^5.3.2",
     "express": "^4.16.4",
     "express-edge": "^1.0.0",
     "express-fileupload": "^1.1.4",
