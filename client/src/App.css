@@ -47,3 +47,21 @@ div.post div.texts h2{
   margin: 0;
   font-size: 1.8rem;
 }
+
+div.post p.info{
+  margin: 6px 0;
+  color: #888;
+  font-size: .7rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+div.post p.info a.author{
+  color: #333;
+}
+
+div.post p.summary{
+  margin: 10px 0;
+  line-height: 1.4rem;
+}
